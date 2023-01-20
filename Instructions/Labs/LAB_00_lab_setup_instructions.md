@@ -60,7 +60,7 @@ Perform the following tasks to prepare your environment for the labs.
     
 5. In Windows PowerShell, enter the following command to run the setup script:
     
-    >**Warning**: Original script is creating resources at region **"australiaeast","northeurope", "southeastasia","uksouth","westeurope","westus","westus2"**. Those region might having a problem to create VM. Change it region list insight file **dp-203-setup-Part01.ps1** at **line 110** to the safe region, _example:  "eastasia", "northcentralus"_, before you execute the script file.
+    >**Warning**: The setup script will create resources in one of the regions **"australiaeast", "northeurope", "southeastasia", "uksouth", "westeurope", "westus", "westus2"**. If using a sponsored subscription, those regions might be locked from creating all the necessary resources. You can change the region list inside file **dp-203-setup-Part01.ps1** at **line 110** to only supported regions, _example:  "eastasia", "northcentralus"_, before you execute the script file.
 
     ```
     .\dp-203-setup-Part01.ps1
